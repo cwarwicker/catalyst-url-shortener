@@ -19,11 +19,31 @@
 
 </head>
 <body>
-<div class="container-fluid">
+<div id="page-container" class="container-fluid">
     <div class="header">
-        <a href="{{ url('/') }}"><img src="{{ URL('/img/logo.png') }}"></a>
+        <a href="{{ url('/') }}"><img src="{{ URL('/img/logo.svg') }}"></a>
     </div>
     @yield('content')
+
+    <footer>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <div class="footer-logo"><img alt="Catalyst IT" src="{{ URL('/img/logo.svg') }}"></div>
+                    <p>First Floor,<br>
+                        36 Frederick Place,<br>
+                        Brighton <span class="postal-code">BN1 4EA</span>, United Kingdom</p>
+                    <p>
+                    <a href="mailto:info@catalyst-eu.net" class="spamspan">info@catalyst-eu.net</a><br><a href="tel:+44 1273 929 450">+44 (0) 1273 929450</a></p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>Copyright © 2019–2021 Catalyst IT Europe. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
 </div>
+
 </body>
 </html>

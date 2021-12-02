@@ -80,6 +80,11 @@ class MainController extends Controller
 
     }
 
+    /**
+     * Authenticate if the URL has a password
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function auth(Request $request) {
 
         $errors = new MessageBag();
