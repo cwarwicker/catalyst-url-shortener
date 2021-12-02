@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\MainController::class, 'main'])->name('main');
+Route::post('/', [\App\Http\Controllers\MainController::class, 'shorten'])->name('do');
+Route::get('/{code}', [\App\Http\Controllers\MainController::class, 'go'])->name('go');
+Route::post('/{code}', [\App\Http\Controllers\MainController::class, 'auth'])->name('auth');

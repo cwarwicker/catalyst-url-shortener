@@ -1,0 +1,93 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom styles.
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700&display=swap');
+
+div.container-fluid {
+    padding: 0;
+}
+
+div.row {
+    margin-bottom: 20px;
+}
+
+div.header {
+    background: #fff;
+    color: $brand-red;
+    text-align: center;
+    padding: 10px;
+
+    img {
+        width: 200px;
+    }
+
+}
+
+div.box {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px #bfbfbf;
+    padding: 10px 30px 5px;
+    text-align: center;
+}
+
+div.result {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px #bfbfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 125%;
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+button {
+
+    background: $brand-red !important;
+    color: #fff  !important;
+    padding: 10px 30px  !important;
+
+    &:hover {
+        background: $brand-darkred  !important;
+        color: #fff  !important;
+    }
+
+}
+
+button.flash {
+    transition: background-color 2s;
+}
+
+button.flash.change {
+    background-color: $green !important;
+}
+
+div.mini-header {
+    background: $brand-red;
+    color: #fff;
+    padding: 5px;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+}
+
+div#options {
+    display: none;
+}
